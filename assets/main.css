@@ -30,7 +30,7 @@ body{
     background-attachment: fixed;
     color: #505050; 
     text-align:left;
-    font-family:'Roboto',sans-serif;
+    font-family:'Roboto';
     font-size:1em;
     line-height:1.5em;
     margin: 60px auto;
@@ -77,8 +77,21 @@ th,td{
 }
 
 /* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
+.banner {position: relative; font-family:'Roboto',serif;}
+/*.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}*/
+.top-left {
+    font-size: 5.33em;  /* Large font size */
+    color: #505050;
+    background: #fafafa;
+    text-align: center;
+    width: 100%;       /* Adjust width if necessary */
+    height: auto;      /* Let height adjust to content */
+    position: absolute;
+    padding: 36px 0 0 0;
+    top: 0px;
+    line-height: 1.2;  /* Add spacing between lines */
+    overflow: visible; /* Ensure no clipping of content */
+}
 .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
@@ -127,3 +140,44 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     table.footer{font-size:0.33em;}
 }
 
+
+
+/* Speaker List */
+.speaker-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between speaker entries */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Individual Speaker Entry */
+.speaker {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    border-bottom: 1px solid #ccc; /* Separator between speakers */
+    padding: 10px 0;
+}
+
+/* Speaker Photo */
+.speaker-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures photo fits the frame */
+    border-radius: 50%; /* Makes photo circular */
+    border: 2px solid #52739e;
+}
+
+/* Speaker Details */
+.speaker-details h3 {
+    margin: 0 0 5px;
+    color: #813c54; /* Heading color */
+    font-family: 'Roboto Slab', serif;
+}
+
+.speaker-details p {
+    margin: 2px 0;
+    color: #505050; /* Text color */
+    font-size: 1em;
+}
