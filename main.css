@@ -42,10 +42,10 @@ a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
 a:hover{color: #b2132e;}
 a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-h1{font-size:2.67em;}
-h2{font-size:2.00em;}
-h3{font-size:1.67em;}
+h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto',serif;}
+h1{font-size:2em;}
+h2{font-size:1.7em;}
+h3{font-size:1.5em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
@@ -73,7 +73,7 @@ table{
 th,td{
     text-align: left;
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
+    /* border: 1px solid black;*/
 }
 
 /* Website Banner */
@@ -100,7 +100,6 @@ th,td{
     left: 10px;    /* Distance from the left */
     text-align: left;
     color: #ffffff; /* Ensure the text color is visible */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional for better readability */
 }
 
 .banner-text h1 {
@@ -131,11 +130,11 @@ th,td{
     line-height: 1.2;  /* Add spacing between lines */
     overflow: visible; /* Ensure no clipping of content */
 }
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px;}
 
 /* Conference Title Logo */
-.title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
-.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
+.title1{color: #b2132e;} 
+.title2{color: #52739e;}
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
@@ -150,8 +149,8 @@ td.sponsor img{width: 100%}
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:left; vertical-align:top; padding:4px 16px 0px 0px;}
-td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
-td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.3em; color: #813c54; height:32px; font-family:'Roboto',serif;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.3em; color: #52739e; height:32px; font-family:'Roboto',serif;}
 td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
 td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
 td.abstract img{display: block; margin: 4px auto 8px auto}
@@ -212,7 +211,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 .speaker-details h3 {
     margin: 0 0 5px;
     color: #813c54; /* Heading color */
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 
 .speaker-details p {
@@ -255,7 +254,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 .organiser-details h3 {
     margin: 0 0 5px;
     color: #813c54; /* Heading color */
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 
 .organiser-details p {
@@ -294,3 +293,24 @@ ul li, ol li {
     margin: 0;                   /* Remove additional margin */
     padding: 0;                  /* Remove additional padding */
 }
+
+
+/* Navigation bar styling */
+nav {
+    background-color: #333; /* Dark background */
+    overflow: hidden; /* Clear floating content */
+}
+
+nav a {
+    float: left; /* Align links horizontally */
+    display: block; /* Make links fill the container */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    background-color: #575757; /* Lighten background on hover */
+}
+
