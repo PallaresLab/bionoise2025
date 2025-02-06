@@ -314,3 +314,27 @@ nav a:hover {
     background-color: #575757; /* Lighten background on hover */
 }
 
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between; /* Creates space between text and video */
+    max-width: 900px; /* Adjust width as needed */
+}
+
+.text {
+    text-align: left;
+    flex: 1; /* Allows text to take available space */
+}
+
+.video-container {
+    flex: 1; /* Allows video to take available space */
+    display: flex;
+    justify-content: center; /* Centers the video */
+}
+
+video {
+
+    border-radius: 10px; /* Adjust the value for more or less rounding */
+    overflow: hidden; /* Ensures the rounded corners are visible */
+}
