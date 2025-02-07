@@ -327,14 +327,16 @@ nav a:hover {
     flex: 1; /* Allows text to take available space */
 }
 
+
 .video-container {
-    flex: 1; /* Allows video to take available space */
     display: flex;
-    justify-content: center; /* Centers the video */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%; /* Ensures the container spans full width */
 }
 
 video {
-
-    border-radius: 10px; /* Adjust the value for more or less rounding */
-    overflow: hidden; /* Ensures the rounded corners are visible */
+    display: block;
+    margin: auto;
+    border-radius: 10px; /* Keeps rounded corners */
 }
